@@ -26,9 +26,6 @@ jobs:
           java-version: '17'
 
       - name: Use application-test.properties for build
-        run: |
-          cp src/main/resources/application-test.properties src/main/resources/application.properties
-          echo "Using application-test.properties for build"
 
       - name: Maven Clean Install
         run: |
